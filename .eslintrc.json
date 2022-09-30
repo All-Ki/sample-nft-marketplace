@@ -1,0 +1,65 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true
+    },
+    "extends": "plugin:react/recommended",
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": 12,
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react",
+        "@typescript-eslint"
+    ],
+    "rules": {
+        "keyword-spacing": "off",
+        "no-shadow": "off", // used to avoid errors when using interface-only files
+        "@typescript-eslint/no-shadow": "off",
+
+        "indent": [1, "tab"],
+        "no-multi-str": 2,
+        "prefer-const": "error",
+        "no-var": "error",
+        "space-before-function-paren": [2, "never"],
+        "prefer-template": "warn",
+        "no-dupe-class-members": "error",
+        "no-const-assign": "error",
+        "no-new-require": "error",
+        "no-use-before-define": "off",
+        "no-unused-vars": "warn",
+        "@typescript-eslint/no-use-before-define": ["error"],
+        "yoda": "error",
+        "radix": [2, "always"],
+          // note you must disable the base rule as it can report incorrect errors
+        "no-void": "error",
+        "no-self-assign": "error",
+        "no-self-compare": "error",
+        "react/jsx-uses-vars": "error",
+        "no-new-func": "error",
+        "no-new": "error",
+        "curly": "error",
+        "dot-notation": "error",
+        "eqeqeq": "error",
+        "no-div-regex": "error",
+        "no-else-return": "error",
+        "no-empty-pattern": "error",
+        "no-eq-null": "error",
+        "no-floating-decimal": "error",
+        "no-redeclare": "error",
+        "no-return-assign": "error",
+        "no-lone-blocks": "error",
+        "no-native-reassign": "error",
+        "no-throw-literal": "error",
+        "no-unused-expressions": "error",
+        "no-useless-concat": "error",
+        "no-unmodified-loop-condition": "error",
+        "no-implied-eval": "error",
+        "semi": "warn",
+        "global-require": "error"
+    }
+}

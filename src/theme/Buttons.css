@@ -1,0 +1,6 @@
+.button-red
+{
+
+	background-color: var(--red);
+	color: var(--main-text);
+}

@@ -1,26 +1,36 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { CssVarsProvider } from "@mui/joy";
+import React from "react";
+import {
+	BrowserRouter as Router,
+	Routes,
+	Route
+} from "react-router-dom";
+import Header from "./components/Header/Header";
+import Algorithm from "./pages/Algorithm/Algorithm";
+import Home from "./pages/Home/Home";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import "./theme/Theme.css";
+import { AppTheme } from './theme/MUI_Theme';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
+export default function App() {
+	return (
+		<CssVarsProvider theme={AppTheme}>
+		<ToastContainer></ToastContainer>
+		<Router>
+
+			<Header></Header>
+
+
+			<Routes>
+
+				<Route path="/" element={<Home />} />
+				<Route path="/algorithm" element={<Algorithm />} />
+
+			</Routes>
+		</Router>
+		</CssVarsProvider>
+	);
 }
 
-export default App;

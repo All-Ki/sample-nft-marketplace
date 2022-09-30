@@ -1,0 +1,20 @@
+.nft-card {
+
+	border-radius: 10px;
+}
+
+.nft-image {
+	border-radius: 10px 10px 0 0;
+	width: 100% !important;
+	object-fit: fill !important;
+	background-color: white;
+
+}
+
+.ERC1155 {
+	box-shadow:
+	4px -4px 0 0px #eee,
+	8px -13px 1px 0px rgba(0, 0, 0, 0.15),
+	8px -8px 0 0px #eee,
+	10px -10px 0px 0px rgba(0, 0, 0, 0.15);
+}
