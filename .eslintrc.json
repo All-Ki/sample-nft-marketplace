@@ -25,7 +25,6 @@
         "no-multi-str": 2,
         "prefer-const": "error",
         "no-var": "error",
-        "space-before-function-paren": [2, "never"],
         "prefer-template": "warn",
         "no-dupe-class-members": "error",
         "no-const-assign": "error",
@@ -60,6 +59,8 @@
         "no-unmodified-loop-condition": "error",
         "no-implied-eval": "error",
         "semi": "warn",
-        "global-require": "error"
+        "global-require": "off",
+        "react/react-in-jsx-scope": "off",
+        "space-before-function-paren": "off"
     }
 }

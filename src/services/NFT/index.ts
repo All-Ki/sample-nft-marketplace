@@ -31,8 +31,8 @@ export async function buy_nft(nft_id : string) : Promise<boolean> {
 export async function get_sale_status(sale_id : string) : Promise<ISaleStatus> {
 	try {
 
-	const request = await Ax.get<ISaleStatus>(`${process.env.REACT_APP_API_URL}/sale/status/${sale_id}`);
-	return request;
+		const request = await Ax.get<ISaleStatus>(`${process.env.REACT_APP_API_URL}/sale/status/${sale_id}`);
+		return request;
 	}
 	catch (e){
 		throw(e);

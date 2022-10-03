@@ -17,19 +17,19 @@ import 'react-toastify/dist/ReactToastify.css';
 export default function App() {
 	return (
 		<CssVarsProvider theme={AppTheme}>
-		<ToastContainer></ToastContainer>
-		<Router>
+			<ToastContainer theme="dark"></ToastContainer>
+			<Router>
 
-			<Header></Header>
+				<Header></Header>
 
 
-			<Routes>
+				<Routes>
 
-				<Route path="/" element={<Home />} />
-				<Route path="/algorithm" element={<Algorithm />} />
+					<Route path="/" element={<Home />} />
+					<Route path="/algorithm" element={<Algorithm />} />
 
-			</Routes>
-		</Router>
+				</Routes>
+			</Router>
 		</CssVarsProvider>
 	);
 }

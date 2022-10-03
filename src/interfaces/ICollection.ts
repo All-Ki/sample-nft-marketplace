@@ -4,4 +4,4 @@ export default interface ICollection{
 	certified : boolean;
 	avatar : string;
 	kind : "erc1155" | "erc721";
-};
+}

@@ -11,4 +11,4 @@ export default interface INFT{
 	offer : IOffer;
 	rank : number;
 	balance : number | string;
-};
+}

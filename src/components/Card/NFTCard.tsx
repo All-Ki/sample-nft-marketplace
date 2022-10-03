@@ -7,7 +7,7 @@ import CardOverflow from "@mui/joy/CardOverflow";
 import Divider from "@mui/joy/Divider";
 import Typography from "@mui/joy/Typography";
 import { toast } from 'react-toastify';
-import { ReactComponent as YourSvg } from "../../assets/avalanche-avax-logo.svg";
+import AvaxLogo from "../../assets/avalanche-avax-logo";
 import {
 	Button,
 	Avatar,
@@ -101,23 +101,20 @@ export default function NFTCard(props: NFTCardProps) {
 						level="h2"
 						sx={NftNameStyle}
 					>
-						{" "}
-						{NFT.name}{" "}
+						{" "} {NFT.name}{" "}
 					</Typography>
 					<Box sx={{ display: "flex", justifyContent:"space-between"}}>
 						<div>
 							<Typography level="body5">Price</Typography>
 							<Typography fontSize="lg" fontWeight="lg">
-								<YourSvg width={15} height={15} />{" "}
-								{get_display_price(NFT.balance)}
+							<AvaxLogo width={15} height={15}/> {get_display_price(NFT.balance)}
 							</Typography>
 						</div>
 						{(!ShowBuyButton && (NFT.offer !== null)) && (
 							<Box sx={{display: "flex", flexDirection:"column", alignItems:"flex-end"}}>
 								<Typography level="body4" sx={{float:"right"}}>Best Offer</Typography>
 								<Typography fontSize="lg" fontWeight="lg">
-									<YourSvg width={15} height={15} />{" "}
-									{get_display_price(NFT.offer.unitary_price_float)}
+								<AvaxLogo width={15} height={15}/> {get_display_price(NFT.offer.unitary_price_float)}
 								</Typography>
 							</Box>
 
