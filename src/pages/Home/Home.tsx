@@ -10,13 +10,11 @@ export default function Home() {
 	const [NFTs, set_NFTs] = useState<INFT[]>([]);
 	const [Loading, set_Loading] = useState(true);
 	function onNftBNought(event: any){
-		console.log(event.detail);
 		set_NFTs(NFTs=>NFTs.filter((nft) => nft.asset_id !== event.detail.asset_id));
 	}
 
 	useEffect(() => {
 		get_all_nfts().then((nfts) => {
-			console.log(nfts);
 			set_NFTs(nfts);
 			set_Loading(false);
 		});
