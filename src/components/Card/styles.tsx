@@ -18,9 +18,7 @@ export const CardPictureStyle=
 
 export const CardAvatarStyle=
 {
-	backgroundColor: "white",
 	border: "2px solid black",
-	color: "black",
 	position: "absolute",
 	zIndex: 2,
 	left: "1rem",

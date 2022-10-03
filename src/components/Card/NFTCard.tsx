@@ -89,6 +89,7 @@ export default function NFTCard(props: NFTCardProps) {
 
 					<Avatar
 						sx={CardAvatarStyle}
+						color="primary" variant="solid"
 					/>
 				</CardOverflow>
 
